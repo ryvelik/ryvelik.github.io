@@ -25,13 +25,14 @@
 
   --sans:
     Inter,
+    "Helvetica Neue",
+    Helvetica,
     ui-sans-serif,
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
-    Helvetica,
     Arial,
     sans-serif;
 
@@ -57,6 +58,9 @@ html{
   color-scheme:dark;
 
   scroll-behavior:smooth;
+
+  font-kerning:normal;
+  text-rendering:optimizeLegibility;
 }
 
 body{
@@ -71,10 +75,13 @@ body{
   font-size:16px;
   line-height:1.5;
 
+  letter-spacing:-.008em;
+
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
 
   text-rendering:optimizeLegibility;
+  font-synthesis:none;
 }
 
 img{
@@ -276,6 +283,8 @@ button{
   letter-spacing:.25em;
 
   text-transform:uppercase;
+
+  text-rendering:geometricPrecision;
 }
 
 
@@ -537,6 +546,8 @@ button{
   text-align:right;
 
   text-transform:uppercase;
+
+  text-wrap:balance;
 }
 
 .hero-center{
@@ -557,7 +568,6 @@ button{
   color:#77746f;
 
   font-size:10px;
-
   line-height:1;
 
   font-weight:750;
@@ -584,6 +594,10 @@ button{
   letter-spacing:-.075em;
 
   font-weight:820;
+
+  text-wrap:balance;
+
+  font-kerning:normal;
 }
 
 .hero-title-main{
@@ -608,6 +622,8 @@ button{
   font-style:italic;
 
   letter-spacing:-.02em;
+
+  text-wrap:balance;
 }
 
 .hero-intro{
@@ -625,6 +641,8 @@ button{
     );
 
   line-height:1.8;
+
+  text-wrap:pretty;
 }
 
 .hero-actions{
@@ -694,7 +712,6 @@ button{
   color:#6d6b66;
 
   font-size:9px;
-
   line-height:1;
 
   font-weight:750;
@@ -715,7 +732,6 @@ button{
   color:#5d5b56;
 
   font-size:9px;
-
   line-height:1;
 
   font-weight:700;
@@ -895,6 +911,8 @@ button{
   letter-spacing:-.075em;
 
   font-weight:820;
+
+  text-wrap:balance;
 }
 
 .page-title em,
@@ -932,6 +950,8 @@ button{
   font-size:14px;
 
   line-height:1.85;
+
+  text-wrap:pretty;
 }
 
 
@@ -1371,6 +1391,8 @@ button{
   letter-spacing:-.035em;
 
   font-weight:720;
+
+  text-wrap:balance;
 }
 
 .piece-caption{
@@ -1475,6 +1497,8 @@ button{
   letter-spacing:-.052em;
 
   font-weight:700;
+
+  text-wrap:balance;
 }
 
 .collection-statement-text em{
@@ -1543,6 +1567,8 @@ button{
   letter-spacing:-.055em;
 
   font-weight:720;
+
+  text-wrap:balance;
 }
 
 .statement-text em{
@@ -1595,6 +1621,8 @@ button{
   letter-spacing:-.055em;
 
   font-weight:760;
+
+  text-wrap:balance;
 }
 
 .story-heading span{
@@ -1620,6 +1648,8 @@ button{
     );
 
   line-height:1.88;
+
+  text-wrap:pretty;
 }
 
 .story-copy p{
@@ -1695,6 +1725,8 @@ button{
   letter-spacing:-.065em;
 
   font-weight:780;
+
+  text-wrap:balance;
 }
 
 .founder-role{
@@ -1721,6 +1753,8 @@ button{
   font-size:15px;
 
   line-height:1.85;
+
+  text-wrap:pretty;
 }
 
 .founder-copy p{
@@ -1781,6 +1815,8 @@ button{
   letter-spacing:-.05em;
 
   font-weight:750;
+
+  text-wrap:balance;
 }
 
 .principles-intro{
@@ -1793,6 +1829,8 @@ button{
   font-size:14px;
 
   line-height:1.75;
+
+  text-wrap:pretty;
 }
 
 .principles-list{
@@ -1845,6 +1883,8 @@ button{
   letter-spacing:-.025em;
 
   font-weight:700;
+
+  text-wrap:balance;
 }
 
 .principle-text{
@@ -1855,6 +1895,8 @@ button{
   font-size:13px;
 
   line-height:1.65;
+
+  text-wrap:pretty;
 }
 
 
@@ -1892,6 +1934,8 @@ button{
     );
 
   line-height:1.85;
+
+  text-wrap:pretty;
 }
 
 .contact-details-copy p{
@@ -1998,6 +2042,8 @@ button{
     );
 
   line-height:1.85;
+
+  text-wrap:pretty;
 }
 
 .elsewhere-list{
@@ -2149,6 +2195,8 @@ button{
   letter-spacing:.2em;
 
   text-transform:uppercase;
+
+  text-rendering:geometricPrecision;
 }
 
 
@@ -2469,7 +2517,6 @@ body.lightbox-open{
   height:50px;
 
   margin:0;
-
   padding:0;
 
   border:1px solid rgba(255,255,255,.16);
