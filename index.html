@@ -12,14 +12,35 @@
 
   <meta
     name="description"
-    content="RYVELIK is an independent creative brand founded by John Robert, beginning with photography and expanding across visual storytelling, design, and creative work."
+    content="RYVELIK is an independent photography brand founded by John Robert, built around intentional visual work, thoughtful storytelling, and a distinct point of view."
   />
 
-  <meta name="theme-color" content="#050505" />
-  <meta name="color-scheme" content="dark" />
+  <meta
+    name="author"
+    content="John Robert"
+  />
+
+  <meta
+    name="theme-color"
+    content="#050505"
+  />
+
+  <meta
+    name="color-scheme"
+    content="dark"
+  />
+
+  <!-- Robots -->
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large"
+  />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website" />
+  <meta
+    property="og:type"
+    content="website"
+  />
 
   <meta
     property="og:title"
@@ -28,7 +49,7 @@
 
   <meta
     property="og:description"
-    content="RYVELIK is an independent creative brand founded by John Robert, beginning with photography and expanding across visual storytelling, design, and creative work."
+    content="RYVELIK is an independent photography brand founded by John Robert, built around intentional visual work, thoughtful storytelling, and a distinct point of view."
   />
 
   <meta
@@ -49,6 +70,27 @@
   <meta
     property="og:image:alt"
     content="RYVELIK — Captured with Intention."
+  />
+
+  <!-- Twitter / X -->
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  />
+
+  <meta
+    name="twitter:title"
+    content="RYVELIK — Captured with Intention."
+  />
+
+  <meta
+    name="twitter:description"
+    content="RYVELIK is an independent photography brand founded by John Robert, built around intentional visual work, thoughtful storytelling, and a distinct point of view."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://ryvelik.github.io/og-image.jpg"
   />
 
   <!-- Canonical URL -->
@@ -100,15 +142,45 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "RYVELIK",
-    "url": "https://ryvelik.github.io/",
-    "description": "RYVELIK is an independent creative brand founded by John Robert, beginning with photography and built to grow beyond a single medium.",
-    "founder": {
-      "@type": "Person",
-      "name": "John Robert"
-    },
-    "email": "mailto:ryvelik@outlook.com"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://ryvelik.github.io/#organization",
+        "name": "RYVELIK",
+        "url": "https://ryvelik.github.io/",
+        "description": "RYVELIK is an independent photography brand founded by John Robert, built around intentional visual work, thoughtful storytelling, and a distinct point of view.",
+        "founder": {
+          "@id": "https://ryvelik.github.io/#john-robert"
+        },
+        "email": "mailto:ryvelik@outlook.com"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://ryvelik.github.io/#john-robert",
+        "name": "John Robert",
+        "url": "https://ryvelik.github.io/about",
+        "jobTitle": "Founder & Photographer",
+        "worksFor": {
+          "@id": "https://ryvelik.github.io/#organization"
+        },
+        "sameAs": [
+          "https://ryvelik.substack.com"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://ryvelik.github.io/#website",
+        "name": "RYVELIK",
+        "url": "https://ryvelik.github.io/",
+        "description": "RYVELIK — Captured with Intention.",
+        "publisher": {
+          "@id": "https://ryvelik.github.io/#organization"
+        },
+        "author": {
+          "@id": "https://ryvelik.github.io/#john-robert"
+        }
+      }
+    ]
   }
   </script>
 
@@ -219,7 +291,7 @@
           <div class="hero-top">
 
             <p class="hero-top-copy">
-              Independent creative brand<br />
+              Independent photography brand<br />
               Founded by John Robert
             </p>
 
@@ -250,10 +322,9 @@
               </h1>
 
               <p class="hero-intro">
-                An independent creative brand beginning with
-                photography and built to grow beyond a single
-                medium. Thoughtful visual work, authentic moments,
-                and a distinct point of view.
+                An independent photography brand founded by
+                John Robert, built around intentional visual work,
+                thoughtful storytelling, and a distinct point of view.
               </p>
 
               <div class="hero-actions">
@@ -308,7 +379,7 @@
         <div class="container preview-inner">
 
           <p class="preview-copy">
-            Photography / Creative Work / New Ideas
+            Photography / Visual Storytelling / Creative Work
           </p>
 
           <a
