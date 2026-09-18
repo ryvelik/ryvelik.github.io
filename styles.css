@@ -2110,11 +2110,14 @@ button{
 }
 
 .footer-inner{
-  display:flex;
+  display:grid;
+
+  grid-template-columns:
+    1fr
+    auto
+    1fr;
 
   align-items:center;
-
-  justify-content:space-between;
 
   gap:30px;
 }
@@ -2123,6 +2126,8 @@ button{
   display:inline-flex;
 
   align-items:center;
+
+  justify-self:start;
 
   gap:11px;
 
@@ -2158,7 +2163,7 @@ button{
 
   gap:24px;
 
-  margin-left:auto;
+  justify-self:center;
 }
 
 .footer-link{
@@ -2217,6 +2222,8 @@ button{
 
 .footer-copy{
   margin:0;
+
+  justify-self:end;
 
   color:#585650;
 
@@ -3032,6 +3039,8 @@ body.lightbox-open{
   /* FOOTER */
 
   .footer-inner{
+    display:flex;
+
     align-items:flex-start;
 
     flex-direction:column;
@@ -3044,7 +3053,7 @@ body.lightbox-open{
 
     justify-content:flex-start;
 
-    margin-left:0;
+    justify-self:auto;
 
     gap:20px;
   }
@@ -3054,6 +3063,8 @@ body.lightbox-open{
   }
 
   .footer-copy{
+    justify-self:auto;
+
     font-size:9px;
   }
 
