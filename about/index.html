@@ -126,6 +126,40 @@
     href="/styles.css"
   />
 
+  <!-- Founder portrait presentation -->
+  <style>
+    .founder-portrait {
+      margin: 34px 0 0;
+      width: min(100%, 390px);
+      aspect-ratio: 4 / 5;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.10);
+      background: #0d0d0d;
+    }
+
+    .founder-portrait img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 34%;
+    }
+
+    @media (max-width: 1100px) {
+      .founder-portrait {
+        width: min(100%, 520px);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .founder-portrait {
+        width: 100%;
+        max-width: 430px;
+        margin-top: 28px;
+      }
+    }
+  </style>
+
   <!-- Microsoft Clarity -->
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -164,7 +198,8 @@
           "@id": "https://ryvelik.github.io/#organization"
         },
         "sameAs": [
-          "https://ryvelik.substack.com"
+          "https://ryvelik.substack.com",
+          "https://dribbble.com/ryvelik"
         ]
       },
       {
@@ -181,6 +216,11 @@
         },
         "publisher": {
           "@id": "https://ryvelik.github.io/#organization"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "contentUrl": "https://ryvelik.github.io/john-robert.jpg",
+          "caption": "John Robert, founder and photographer of RYVELIK"
         }
       },
       {
@@ -430,6 +470,17 @@
               Founder &amp; Photographer
             </p>
 
+            <figure class="founder-portrait">
+
+              <img
+                src="../john-robert.jpg"
+                alt="John Robert, founder and photographer of RYVELIK"
+                loading="lazy"
+                decoding="async"
+              />
+
+            </figure>
+
           </div>
 
           <div class="founder-copy">
@@ -642,6 +693,33 @@
           </span>
 
         </div>
+
+
+        <nav
+          class="footer-links"
+          aria-label="External profiles"
+        >
+
+          <a
+            class="footer-link"
+            href="https://ryvelik.substack.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Substack ↗
+          </a>
+
+          <a
+            class="footer-link"
+            href="https://dribbble.com/ryvelik"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Dribbble ↗
+          </a>
+
+        </nav>
+
 
         <p class="footer-copy">
           © 2026 RYVELIK. All rights reserved.
