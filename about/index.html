@@ -12,34 +12,85 @@
 
   <meta
     name="description"
-    content="About RYVELIK and its founder, John Robert."
+    content="About John Robert, founder and photographer behind RYVELIK, an independent photography brand built around intentional visual work."
   />
 
-  <meta name="theme-color" content="#050505" />
-  <meta name="color-scheme" content="dark" />
+  <meta
+    name="author"
+    content="John Robert"
+  />
+
+  <meta
+    name="theme-color"
+    content="#050505"
+  />
+
+  <meta
+    name="color-scheme"
+    content="dark"
+  />
+
+  <!-- Robots -->
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large"
+  />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="RYVELIK — About" />
+  <meta
+    property="og:type"
+    content="website"
+  />
+
+  <meta
+    property="og:title"
+    content="RYVELIK — About"
+  />
+
   <meta
     property="og:description"
-    content="About RYVELIK and its founder, John Robert."
+    content="About John Robert, founder and photographer behind RYVELIK, an independent photography brand built around intentional visual work."
   />
+
   <meta
     property="og:url"
     content="https://ryvelik.github.io/about/"
   />
+
   <meta
     property="og:site_name"
     content="RYVELIK"
   />
+
   <meta
     property="og:image"
     content="https://ryvelik.github.io/og-image.jpg"
   />
+
   <meta
     property="og:image:alt"
-    content="RYVELIK — Captured with Intention."
+    content="RYVELIK — About John Robert"
+  />
+
+  <!-- Twitter / X -->
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  />
+
+  <meta
+    name="twitter:title"
+    content="RYVELIK — About"
+  />
+
+  <meta
+    name="twitter:description"
+    content="About John Robert, founder and photographer behind RYVELIK, an independent photography brand built around intentional visual work."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://ryvelik.github.io/og-image.jpg"
   />
 
   <!-- Canonical URL -->
@@ -54,12 +105,14 @@
     href="/favicon.ico"
     sizes="any"
   />
+
   <link
     rel="icon"
     href="/favicon-32x32.png"
     type="image/png"
     sizes="32x32"
   />
+
   <link
     rel="icon"
     href="/favicon-16x16.png"
@@ -83,6 +136,68 @@
         y=l.getElementsByTagName(r)[0];
         y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "yjtcumb3m");
+  </script>
+
+  <!-- RYVELIK structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://ryvelik.github.io/#organization",
+        "name": "RYVELIK",
+        "url": "https://ryvelik.github.io/",
+        "description": "RYVELIK is an independent photography brand founded by John Robert, built around intentional visual work, thoughtful storytelling, and a distinct point of view.",
+        "founder": {
+          "@id": "https://ryvelik.github.io/#john-robert"
+        },
+        "email": "mailto:ryvelik@outlook.com"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://ryvelik.github.io/#john-robert",
+        "name": "John Robert",
+        "url": "https://ryvelik.github.io/about/",
+        "jobTitle": "Founder & Photographer",
+        "worksFor": {
+          "@id": "https://ryvelik.github.io/#organization"
+        },
+        "sameAs": [
+          "https://ryvelik.substack.com"
+        ]
+      },
+      {
+        "@type": "AboutPage",
+        "@id": "https://ryvelik.github.io/about/#page",
+        "url": "https://ryvelik.github.io/about/",
+        "name": "RYVELIK — About",
+        "description": "About John Robert, founder and photographer behind RYVELIK.",
+        "isPartOf": {
+          "@id": "https://ryvelik.github.io/#website"
+        },
+        "about": {
+          "@id": "https://ryvelik.github.io/#john-robert"
+        },
+        "publisher": {
+          "@id": "https://ryvelik.github.io/#organization"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://ryvelik.github.io/#website",
+        "name": "RYVELIK",
+        "url": "https://ryvelik.github.io/",
+        "description": "RYVELIK — Captured with Intention.",
+        "publisher": {
+          "@id": "https://ryvelik.github.io/#organization"
+        },
+        "author": {
+          "@id": "https://ryvelik.github.io/#john-robert"
+        }
+      }
+    ]
+  }
   </script>
 
 </head>
@@ -209,9 +324,9 @@
           </div>
 
           <p class="page-intro">
-            RYVELIK is an independent creative brand founded by
-            John Robert. It begins with photography, but the idea
-            is intentionally bigger than one medium.
+            RYVELIK is an independent photography brand founded by
+            John Robert. It begins with intentional visual work,
+            thoughtful storytelling, and a distinct point of view.
           </p>
 
         </div>
@@ -312,7 +427,7 @@
             </h2>
 
             <p class="founder-role">
-              Founder
+              Founder &amp; Photographer
             </p>
 
           </div>
@@ -320,8 +435,8 @@
           <div class="founder-copy">
 
             <p>
-              John Robert is the founder of RYVELIK, building the
-              brand independently from the ground up.
+              John Robert is a photographer and founder of RYVELIK,
+              building the brand independently from the ground up.
             </p>
 
             <p>
