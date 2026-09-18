@@ -12,7 +12,14 @@
 
   <meta
     name="description"
-    content="Contact RYVELIK and John Robert."
+    content="Contact John Robert, founder and photographer behind RYVELIK, an independent photography brand built around intentional visual work."
+  />
+
+  <meta name="author" content="John Robert" />
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large"
   />
 
   <meta name="theme-color" content="#050505" />
@@ -21,25 +28,56 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="RYVELIK — Contact" />
+
   <meta
     property="og:description"
-    content="Contact RYVELIK and John Robert."
+    content="Contact John Robert, founder and photographer behind RYVELIK, an independent photography brand built around intentional visual work."
   />
+
   <meta
     property="og:url"
     content="https://ryvelik.github.io/contact/"
   />
+
   <meta
     property="og:site_name"
     content="RYVELIK"
   />
+
   <meta
     property="og:image"
     content="https://ryvelik.github.io/og-image.jpg"
   />
+
   <meta
     property="og:image:alt"
-    content="RYVELIK — Captured with Intention."
+    content="RYVELIK — Contact John Robert"
+  />
+
+  <!-- Twitter / X -->
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  />
+
+  <meta
+    name="twitter:title"
+    content="RYVELIK — Contact"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Contact John Robert, founder and photographer behind RYVELIK."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://ryvelik.github.io/og-image.jpg"
+  />
+
+  <meta
+    name="twitter:image:alt"
+    content="RYVELIK — Contact John Robert"
   />
 
   <!-- Canonical URL -->
@@ -54,12 +92,14 @@
     href="/favicon.ico"
     sizes="any"
   />
+
   <link
     rel="icon"
     href="/favicon-32x32.png"
     type="image/png"
     sizes="32x32"
   />
+
   <link
     rel="icon"
     href="/favicon-16x16.png"
@@ -72,6 +112,59 @@
     rel="stylesheet"
     href="/styles.css"
   />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://ryvelik.github.io/#organization",
+        "name": "RYVELIK",
+        "url": "https://ryvelik.github.io/",
+        "founder": {
+          "@id": "https://ryvelik.github.io/about/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://ryvelik.github.io/about/#person",
+        "name": "John Robert",
+        "url": "https://ryvelik.github.io/about/",
+        "jobTitle": "Founder & Photographer",
+        "worksFor": {
+          "@id": "https://ryvelik.github.io/#organization"
+        },
+        "sameAs": [
+          "https://ryvelik.substack.com"
+        ]
+      },
+      {
+        "@type": "ContactPage",
+        "@id": "https://ryvelik.github.io/contact/#webpage",
+        "url": "https://ryvelik.github.io/contact/",
+        "name": "RYVELIK — Contact",
+        "description": "Contact John Robert, founder and photographer behind RYVELIK.",
+        "isPartOf": {
+          "@id": "https://ryvelik.github.io/#website"
+        },
+        "about": {
+          "@id": "https://ryvelik.github.io/about/#person"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://ryvelik.github.io/#website",
+        "url": "https://ryvelik.github.io/",
+        "name": "RYVELIK",
+        "publisher": {
+          "@id": "https://ryvelik.github.io/#organization"
+        }
+      }
+    ]
+  }
+  </script>
 
   <!-- Microsoft Clarity -->
   <script type="text/javascript">
@@ -235,7 +328,7 @@
               </p>
 
               <p class="contact-role">
-                Founder / RYVELIK
+                Founder &amp; Photographer / RYVELIK
               </p>
 
             </div>
