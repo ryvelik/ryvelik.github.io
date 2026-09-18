@@ -1935,6 +1935,166 @@ button{
 
 
 /* =========================================================
+   EXTERNAL PROFILES / ELSEWHERE
+========================================================= */
+
+.elsewhere{
+  padding:
+    clamp(95px,12vw,170px)
+    0;
+
+  border-top:1px solid var(--line-soft);
+}
+
+.elsewhere-grid{
+  display:grid;
+
+  grid-template-columns:
+    minmax(180px,.7fr)
+    minmax(0,1.3fr);
+
+  gap:
+    clamp(
+      50px,
+      9vw,
+      135px
+    );
+
+  align-items:start;
+}
+
+.elsewhere-label{
+  margin:0;
+
+  color:#706d67;
+
+  font-size:10px;
+
+  line-height:1.45;
+
+  font-weight:750;
+
+  letter-spacing:.2em;
+
+  text-transform:uppercase;
+}
+
+.elsewhere-content{
+  min-width:0;
+}
+
+.elsewhere-intro{
+  max-width:680px;
+
+  margin:0 0 42px;
+
+  color:#9c9993;
+
+  font-size:
+    clamp(
+      16px,
+      1.4vw,
+      19px
+    );
+
+  line-height:1.85;
+}
+
+.elsewhere-list{
+  border-top:1px solid var(--line);
+}
+
+.elsewhere-link{
+  position:relative;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:30px;
+
+  padding:22px 0;
+
+  border-bottom:1px solid var(--line-soft);
+
+  color:#dedcd7;
+
+  transition:
+    color .25s ease,
+    padding .3s var(--ease);
+}
+
+.elsewhere-link::after{
+  content:"↗";
+
+  flex:none;
+
+  color:#77736e;
+
+  font-size:16px;
+
+  transition:
+    color .25s ease,
+    transform .3s var(--ease);
+}
+
+.elsewhere-link:hover,
+.elsewhere-link:focus-visible{
+  color:#fff;
+
+  padding-left:7px;
+}
+
+.elsewhere-link:hover::after,
+.elsewhere-link:focus-visible::after{
+  color:#fff;
+
+  transform:translate(2px,-2px);
+}
+
+.elsewhere-link-main{
+  display:flex;
+
+  align-items:baseline;
+
+  gap:16px;
+
+  min-width:0;
+}
+
+.elsewhere-link-name{
+  font-size:
+    clamp(
+      19px,
+      2.2vw,
+      28px
+    );
+
+  line-height:1;
+
+  letter-spacing:-.025em;
+
+  font-weight:700;
+}
+
+.elsewhere-link-type{
+  color:#66635e;
+
+  font-size:9px;
+
+  line-height:1;
+
+  font-weight:750;
+
+  letter-spacing:.18em;
+
+  text-transform:uppercase;
+}
+
+
+/* =========================================================
    FOOTER
 ========================================================= */
 
@@ -2349,7 +2509,8 @@ body.lightbox-open{
   .story-grid,
   .founder-grid,
   .collection-statement-inner,
-  .contact-details{
+  .contact-details,
+  .elsewhere-grid{
     grid-template-columns:1fr;
 
     gap:34px;
@@ -2373,6 +2534,13 @@ body.lightbox-open{
 
   .principle-text{
     grid-column:2;
+  }
+
+
+  /* ELSEWHERE */
+
+  .elsewhere-intro{
+    margin-bottom:34px;
   }
 
 
@@ -2740,6 +2908,54 @@ body.lightbox-open{
   }
 
 
+  /* ELSEWHERE */
+
+  .elsewhere{
+    padding:
+      92px
+      0;
+  }
+
+  .elsewhere-intro{
+    margin-bottom:28px;
+
+    font-size:15px;
+
+    line-height:1.75;
+  }
+
+  .elsewhere-link{
+    padding:20px 0;
+
+    gap:18px;
+  }
+
+  .elsewhere-link:hover,
+  .elsewhere-link:focus-visible{
+    padding-left:4px;
+  }
+
+  .elsewhere-link-main{
+    align-items:flex-start;
+
+    flex-direction:column;
+
+    gap:7px;
+  }
+
+  .elsewhere-link-name{
+    font-size:22px;
+  }
+
+  .elsewhere-link-type{
+    font-size:8px;
+  }
+
+  .elsewhere-link::after{
+    font-size:15px;
+  }
+
+
   /* FOOTER */
 
   .footer-inner{
@@ -2818,7 +3034,9 @@ body.lightbox-open{
   }
 
   *,
+
   *::before,
+
   *::after{
     transition:none !important;
 
